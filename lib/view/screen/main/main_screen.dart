@@ -15,12 +15,12 @@ class MainPage extends StatelessWidget {
           : AppBar(
         backgroundColor: const Color(0xFF1E1E28),
         leading: Builder(
-            builder: (context) => IconButton(
-                onPressed: () {
-                  Scaffold.of(context).openDrawer();
-                },
-                icon: const Icon(Icons.menu_open_sharp)
-            ),
+          builder: (context) => IconButton(
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              },
+              icon: const Icon(Icons.menu_open_sharp)
+          ),
         ),
       ),
       drawer: const SideMenu(),
