@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_portfolio/utils/constants.dart';
 import 'package:flutter_portfolio/view/screen/main/components/area_info_text.dart';
 import 'package:flutter_portfolio/view/screen/main/components/my_info.dart';
 import 'package:flutter_portfolio/view/screen/main/components/skills.dart';
@@ -31,6 +32,7 @@ class SideMenu extends StatelessWidget {
                           text: "19",
                         ),
                         Skills(),
+                        SizedBox(height: defaultPadding,)
                       ],
                     ),
                   )
