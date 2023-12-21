@@ -43,12 +43,12 @@ class HomeBanner extends StatelessWidget {
                    ElevatedButton(
                        onPressed: () {},
                      style: TextButton.styleFrom(
-                       padding: EdgeInsets.symmetric(
+                       padding: const EdgeInsets.symmetric(
                            horizontal: defaultPadding * 2,
                            vertical: defaultPadding),
-                       backgroundColor: Color(0xFFFFC107),
+                       backgroundColor: const Color(0xFFFFC107),
                      ),
-                     child: Text(
+                     child: const Text(
                        "EXPLORE NOW",
                        style: TextStyle(color: Color(0xFF191923)),
                      ),
