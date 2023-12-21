@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_portfolio/view/screen/main/components/area_info_text.dart';
 import 'package:flutter_portfolio/view/screen/main/components/my_info.dart';
+import 'package:flutter_portfolio/view/screen/main/components/skills.dart';
 
 class SideMenu extends StatelessWidget {
   const SideMenu({Key? key}) : super(key: key);
@@ -10,13 +12,25 @@ class SideMenu extends StatelessWidget {
       child: SafeArea(
           child: Column(
             children: [
-              MyInfo(),
+              const MyInfo(),
               Expanded(
                   child: SingleChildScrollView(
-                    padding: EdgeInsets.all(16),
+                    padding: const EdgeInsets.all(16),
                     child: Column(
-                      children: [
-
+                      children:  [
+                        AreaInfoText(
+                          tittle: "Residence",
+                          text: "India",
+                        ),
+                        AreaInfoText(
+                          tittle: "City",
+                          text: "Surat",
+                        ),
+                        AreaInfoText(
+                          tittle: "Age",
+                          text: "19",
+                        ),
+                        Skills(),
                       ],
                     ),
                   )

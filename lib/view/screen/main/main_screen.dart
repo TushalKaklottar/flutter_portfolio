@@ -31,11 +31,11 @@ class MainPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               if(Responsive.isDesktop(context))
-                 Expanded(
+                 const Expanded(
                   flex: 2,
                     child: SideMenu(),
                 ),
-              SizedBox(width: 16),
+              const SizedBox(width: 16),
               Expanded(
                 flex: 7,
                   child: SingleChildScrollView(
